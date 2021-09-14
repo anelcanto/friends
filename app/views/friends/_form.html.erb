@@ -1,0 +1,30 @@
+<%= form_with(model: friend) do |form| %>
+  <div class="field form-outline mb-4">
+    <% form.label :first_name %>
+    <%= form.text_field :first_name, class:"form-control", placeholder:"First Name" %>
+  </div>
+
+  <div class="field form-outline mb-4">
+    <% form.label :last_name %>
+    <%= form.text_field :last_name, class:"form-control", placeholder:"Last Name"  %>
+  </div>
+
+  <div class="field form-outline mb-4">
+    <% form.label :email %>
+    <%= form.text_field :email, class:"form-control", placeholder:"Email"  %>
+  </div>
+
+  <div class="field form-outline mb-4">
+    <% form.label :phone %>
+    <%= form.text_field :phone, class:"form-control", placeholder:"Phone" %>
+  </div>
+
+  <div class="field form-outline mb-4">
+    <% form.label :twitter %>
+    <%= form.text_field :twitter, class:"form-control", placeholder:"Twitter"   %>
+  </div>
+
+  <div class="actions" class="btn btn-primary">
+    <%= form.submit %>
+  </div>
+<% end %>
