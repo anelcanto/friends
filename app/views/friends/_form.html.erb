@@ -23,6 +23,9 @@
     <% form.label :twitter %>
     <%= form.text_field :twitter, class:"form-control", placeholder:"Twitter"   %>
   </div>
+  <div class="field form-outline mb-4">
+    <%= form.text_field :user_id, id: :friend_user_id, class:"form-control", value: current_user.id, type: :hidden %>
+  </div>
 
   <div class="actions" class="btn btn-primary">
     <%= form.submit %>
